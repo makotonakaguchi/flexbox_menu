@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/* 基本スタイル
+---------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-weight: normal;
+	list-style: none;
+}
+body {
+	font-size: 75%;
+	line-height: 1.5;
+	color: #333;
+	background-color: #fff;
+}
+
+/* ヘッダー
+---------------------------------------------*/
+header {
+	background-color: #2D78BF;
+	padding-top: 90px;
+}
+h1 {
+	position: absolute;
+	left: 10px;
+	top: 30px;
+	height: 33px;
+  font-size: 300%;
+  color: white;
+}
+
+/* ナビゲーション
+---------------------------------------------*/
+nav {
+  position: -o-sticky;
+  position: -moz-sticky;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+#globalNav {
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+  -o-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+	width: 100%;
+  background: #E8E8E8;
+	border-bottom: 3px solid #ccc;
+}
+#globalNav li {
+  -o-flex: 1 1 0px;
+  -ms-flex: 1 1 0px;
+  -moz-flex: 1 1 0px;
+  -webkit-flex: 1 1 0px;
+  flex: 1 1 0px;
+  
+	border-right: 1px solid #ccc;
+}
+#globalNav li a {
+	display: block;
+	width: 100%;
+	line-height: 2.5em;
+	color: #333;
+	text-decoration: none;
+	text-align: center;
+	background: #E8E8E8;
+  background: linear-gradient(#fff, #dddddd);
+}
+#globalNav li a:hover {
+	color: #fff;
+	background: #50B622;
+  background: linear-gradient(#6cdb3a, #50B622)
+}
+
+/* コンテンツ
+---------------------------------------------*/
+main {
+	overflow: auto !important;
+	width: 100%;
+	padding: 25px 0;
+}
